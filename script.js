@@ -4,6 +4,7 @@ const circle=document.querySelector(".circle")
 const nextBtn=document.querySelector(".next")
 const prevBtn=document.querySelector(".previous")
 
+
 const pages=["gender.html","age.html","symptoms.html","cure.html"]
 
 let currentPage=window.location.pathname.split("/").pop().toLowerCase()
@@ -137,3 +138,37 @@ if(container && input){
 
     updateNextButton()
 }
+
+//gender
+
+//gender
+document.addEventListener("DOMContentLoaded", () => {
+    const maleBtn = document.querySelector(".male");
+    const femaleBtn = document.querySelector(".female");
+    const nextBtn = document.querySelector(".next");
+
+    let selectedGender = "";
+
+    maleBtn.addEventListener("click", () => {
+        selectedGender = "male";
+        maleBtn.classList.add("selected");
+        femaleBtn.classList.remove("selected");
+        nextBtn.disabled = false;
+    });
+
+    femaleBtn.addEventListener("click", () => {
+        selectedGender = "female";
+        femaleBtn.classList.add("selected");
+        maleBtn.classList.remove("selected");
+        nextBtn.disabled = false;
+    });
+
+    nextBtn.addEventListener("click", () => {
+        if (selectedGender !== "") {
+            localStorage.setItem("gender", selectedGender);
+            window.location.href = "nextpage.html";
+        }
+    });
+});
+
+//gender

@@ -273,6 +273,7 @@ body{
         border: solid;
         border-radius: 10px;
         border-color: #c1c1c1;
+        transition: all 0.2s ease;
 
         
 }
@@ -305,4 +306,18 @@ button:hover {
 
 .female:hover{
     filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(1359%) hue-rotate(328deg) brightness(94%) contrast(80%);
+}
+
+.male.selected,
+.female.selected{
+    border-color: #e6535a;
+    background: none;   /* remove fill */
+    transform: scale(1.06);
+}
+
+.male.selected .male-icon,
+.female.selected .female-icon{
+   filter: brightness(0) saturate(100%) invert(38%) sepia(80%) saturate(1359%) hue-rotate(328deg) brightness(94%) contrast(80%);
+   transition: transform 0.2s ease
+   
 }
