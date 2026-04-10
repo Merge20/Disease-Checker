@@ -166,9 +166,10 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.addEventListener("click", () => {
         if (selectedGender !== "") {
             localStorage.setItem("gender", selectedGender);
-            window.location.href = "nextpage.html";
+            window.location.href = "age.html";
         }
     });
 });
 
 //gender
+

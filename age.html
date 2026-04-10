@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+<div class="main">
+
+    <!-- LEFT PANEL (same as before) -->
+    <div class="left">
+        <div class="web-title">Disease Checker</div>
+
+        <div class="progress">
+            <div class="circle">
+                <div class="circle1">50%</div>
+                <div class="circle2">Step 2/4</div>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="gender active">Gender</div>
+            <div class="age active">Age</div>
+            <div class="symptoms">Symptoms</div>
+            <div class="cure">Cure</div>
+        </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <div class="r1">
+            <div class="step">STEP 2/4</div>
+        </div>
+
+        <div class="r2">
+            <div class="sex">Please enter your age</div>
+        </div>
+
+        <!-- AGE INPUT -->
+        <div class="ruh">
+            <div class="age-box">
+                <input type="number" id="ageInput" placeholder="Enter your age" min="1" max="120">
+                <div id="ageError">Enter a valid age (1–120)</div>
+            </div>
+        </div>
+
+        <!-- BUTTONS -->
+        <div class="r3">
+            <button class="previous" onclick="window.location.href='gender.html'">
+                Previous
+            </button>
+
+            <button class="next" disabled>
+                Next
+            </button>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
