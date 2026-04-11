@@ -110,8 +110,8 @@ disease-checker/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/Merge20/phuchuk-phuchuk.git
-cd phuchuk-phuchuk/disease-checker
+git clone https://github.com/Merge20/Diease-Checker.git
+cd disease-checker
 ```
 
 ### 2. Install Python dependencies
