@@ -1,0 +1,2 @@
+pip install pandas numpy scikit-learn fastapi uvicorn pydantic python-multipart
+uvicorn main:app --reload

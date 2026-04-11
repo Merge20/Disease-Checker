@@ -3,15 +3,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Disease Checker — Symptoms</title>
+    <link rel="stylesheet" href="styles/symptoms.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
-    <title>Symptoms</title>
+    <script defer src="script/script.js"></script>
 </head>
 <body>
     <div class="main">
+
         <div class="left">
             <div class="web-title">Disease Checker</div>
             <div class="progress">
@@ -23,7 +24,7 @@
             <div class="tabs">
                 <div class="gender"><img class="icons" src="assets/gender.svg">Gender</div>
                 <div class="age"><img class="icons" src="assets/age.svg">Age</div>
-                <div class="symptoms"><img class="icons" src="assets/symptom.svg">Symptoms</div>
+                <div class="symptoms active"><img class="icons" src="assets/symptom.svg">Symptoms</div>
                 <div class="cure"><img class="icons" src="assets/cure.svg">Cure</div>
             </div>
         </div>
@@ -38,13 +39,18 @@
                 <div class="search-box">
                     <div class="search-icon"><img src="assets/search-icon.svg"></div>
                     <div class="main-search-box">
-                        <input type="text" id="symptom" placeholder="Search, eg: Headache, cough" readonly>
+                        <input type="text" id="symptom" placeholder="Search, e.g: Headache, cough">
                     </div>
                 </div>
 
                 <div class="common-symp">
                     <div class="head-text">Common Symptoms:</div>
                     <div class="main-common-symptoms"></div>
+                </div>
+
+                <div class="selected-symp">
+                    <div class="head-text" id="selectedLabel">Selected Symptoms:</div>
+                    <div class="main-selected-symptoms"></div>
                 </div>
             </div>
 
@@ -58,6 +64,7 @@
                 </button>
             </div>
         </div>
+
     </div>
 </body>
 </html>

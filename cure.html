@@ -3,60 +3,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <title>Disease Checker — Results</title>
+    <link rel="stylesheet" href="styles/cure.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script defer src="script.js"></script>
-    <title>Gender</title>
+    <script defer src="script/cure.js"></script>
 </head>
 <body>
     <div class="main">
+
         <div class="left">
             <div class="web-title">Disease Checker</div>
             <div class="progress">
                 <div class="circle">
-                    <div class="circle1" id="progressPercent">75%</div>
-                    <div class="circle2" id="progressStep">Step 3/4</div>
+                    <div class="circle1">100%</div>
+                    <div class="circle2">Step 4/4</div>
                 </div>
             </div>
             <div class="tabs">
                 <div class="gender"><img class="icons" src="assets/gender.svg">Gender</div>
                 <div class="age"><img class="icons" src="assets/age.svg">Age</div>
                 <div class="symptoms"><img class="icons" src="assets/symptom.svg">Symptoms</div>
-                <div class="cure"><img class="icons" src="assets/cure.svg">Cure</div>
+                <div class="cure active"><img class="icons" src="assets/cure.svg">Cure</div>
             </div>
         </div>
 
         <div class="right">
             <div class="r1">
-                <div class="step">STEP 1/4</div>
-
+                <div class="step">STEP 4/4</div>
+                <div class="text1">Your Results</div>
             </div>
 
-            <div class="r2">
-                <div class="sex">Please Select your gender</div>
-            </div>
-
-            <div class="ruh">
-               <button class="male">
-                <img class="male-icon" src="assets/male.png" >
-                </button>
-               <button class="female">
-                <img class="female-icon" src="assets/female.png" >
-                </button>
+            <div class="results-container" id="resultsContainer">
+                <p class="loading-text">Analyzing your symptoms...</p>
             </div>
 
             <div class="r3">
-                <button class="previous">
+                <button class="previous" onclick="window.location.href='symptoms.html'">
                     <img src="assets/left-arrow.svg" class="btn-icon">
-                    Previous
+                    Back
                 </button>
-                <button class="next" disabled>
-                    Next
+                <button class="next" onclick="window.location.href='index.html'">
+                    Start Over
                 </button>
             </div>
         </div>
+
     </div>
 </body>
 </html>
