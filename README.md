@@ -43,9 +43,21 @@ No third-party AI API. No data sent to the cloud. Everything runs on your machin
 ## How it looks
 
 ```
-<div align="center">
-<img width="1361" height="635" alt="image" src="https://github.com/user-attachments/assets/ff16ee12-24ad-45ba-bdc9-66384948ee17" />
-</div>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/e3a38e53-322e-40e7-a997-0e06c546e189" width="1366">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/2b595338-a4a6-4e4b-a0a3-a4ed76cc50e4" width="1366">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6ea70794-6780-44a8-a2d3-d37e15d1fca4" width="1366">
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1d102bda-cdfd-4341-a232-810bd3e776f5" width="1366">
+</p>
 ```
 
 ---
