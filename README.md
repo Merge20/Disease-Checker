@@ -42,12 +42,10 @@ No third-party AI API. No data sent to the cloud. Everything runs on your machin
 
 ## How it looks
 
-```
-![[img](./image/img1.png)](https://github.com/Merge20/Disease-Checker/blob/f57c02604ae059024ebbbe1001c1bbe42ad1d647/image/img1.png)
+![img](./image/img1.png)
 ![img](./image/img2.png)
 ![img](./image/img3.png)
 ![img](./image/img4.png)
-```
 
 ---
 
