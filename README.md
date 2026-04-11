@@ -43,19 +43,8 @@ No third-party AI API. No data sent to the cloud. Everything runs on your machin
 ## How it looks
 
 ```
-┌─────────────────┬──────────────────────────────────────────┐
-│                 │                                          │
-│  Disease        │   STEP 1 / 4                             │
-│  Checker        │   Please select your gender              │
-│                 │                                          │
-│   ◉ 25%         │       ┌───────┐     ┌───────┐           │
-│   Step 1/4      │       │  👨   │     │  👩   │           │
-│                 │       │ Male  │     │Female │           │
-│  ● Gender       │       └───────┘     └───────┘           │
-│  ○ Age          │                                          │
-│  ○ Symptoms     │              [ Previous ]  [ Next → ]   │
-│  ○ Cure         │                                          │
-└─────────────────┴──────────────────────────────────────────┘
+<img width="1361" height="635" alt="image" src="https://github.com/user-attachments/assets/ff16ee12-24ad-45ba-bdc9-66384948ee17" />
+
 ```
 
 ---
