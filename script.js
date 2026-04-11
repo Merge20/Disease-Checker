@@ -139,14 +139,15 @@ if(container && input){
     updateNextButton()
 }
 
-//gender
 
-//gender
-document.addEventListener("DOMContentLoaded", () => {
-    const maleBtn = document.querySelector(".male");
-    const femaleBtn = document.querySelector(".female");
+
+// -------- GENDER PAGE --------
+const maleBtn = document.querySelector(".male");
+const femaleBtn = document.querySelector(".female");
+
+if (maleBtn && femaleBtn) {
+
     const nextBtn = document.querySelector(".next");
-
     let selectedGender = "";
 
     maleBtn.addEventListener("click", () => {
@@ -169,7 +170,31 @@ document.addEventListener("DOMContentLoaded", () => {
             window.location.href = "age.html";
         }
     });
-});
+}
 
-//gender
+// -------- AGE PAGE --------
+const ageCards = document.querySelectorAll(".age-card");
 
+if (ageCards.length > 0) {
+
+    const nextBtn = document.querySelector(".next");
+    let selectedAgeGroup = "";
+
+    ageCards.forEach(card => {
+        card.addEventListener("click", () => {
+            selectedAgeGroup = card.dataset.age;
+
+            ageCards.forEach(c => c.classList.remove("selected"));
+            card.classList.add("selected");
+
+            nextBtn.disabled = false;
+        });
+    });
+
+    nextBtn.addEventListener("click", () => {
+        if (selectedAgeGroup !== "") {
+            localStorage.setItem("ageGroup", selectedAgeGroup);
+            window.location.href = "symptoms.html";
+        }
+    });
+}

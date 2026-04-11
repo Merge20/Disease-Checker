@@ -42,15 +42,30 @@
         </div>
 
         <div class="r2">
-            <div class="sex">Please enter your age</div>
+            <div class="sex">Select your age</div>
         </div>
 
         <!-- AGE INPUT -->
         <div class="ruh">
-            <div class="age-box">
-                <input type="number" id="ageInput" placeholder="Enter your age" min="1" max="120">
-                <div id="ageError">Enter a valid age (1–120)</div>
-            </div>
+           <button class="age-card" data-age="child">
+    <div class="age-title">Child</div>
+    <div class="age-range">0–12</div>
+</button>
+
+<button class="age-card" data-age="teen">
+    <div class="age-title">Teen</div>
+    <div class="age-range">13–19</div>
+</button>
+
+<button class="age-card" data-age="adult">
+    <div class="age-title">Adult</div>
+    <div class="age-range">20–59</div>
+</button>
+
+<button class="age-card" data-age="senior">
+    <div class="age-title">Senior</div>
+    <div class="age-range">60+</div>
+</button>
         </div>
 
         <!-- BUTTONS -->

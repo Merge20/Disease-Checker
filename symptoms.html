@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script defer src="script.js"></script>
-    <title>Gender</title>
+    <title>Symptoms</title>
 </head>
 <body>
     <div class="main">
@@ -30,21 +30,22 @@
 
         <div class="right">
             <div class="r1">
-                <div class="step">STEP 1/4</div>
-
+                <div class="step">STEP 3/4</div>
+                <div class="text1">Add your symptoms</div>
             </div>
 
             <div class="r2">
-                <div class="sex">Please Select your gender</div>
-            </div>
+                <div class="search-box">
+                    <div class="search-icon"><img src="assets/search-icon.svg"></div>
+                    <div class="main-search-box">
+                        <input type="text" id="symptom" placeholder="Search, eg: Headache, cough" readonly>
+                    </div>
+                </div>
 
-            <div class="ruh">
-               <button class="male">
-                <img class="male-icon" src="assets/male.png" >
-                </button>
-               <button class="female">
-                <img class="female-icon" src="assets/female.png" >
-                </button>
+                <div class="common-symp">
+                    <div class="head-text">Common Symptoms:</div>
+                    <div class="main-common-symptoms"></div>
+                </div>
             </div>
 
             <div class="r3">
