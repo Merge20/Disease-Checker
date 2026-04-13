@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Checker — Login</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script/auth.js"></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="left">
+            <div class="web-title">Disease Checker</div>
+            <div class="left-illustration">
+                <div class="illus-circle illus-circle--1"></div>
+                <div class="illus-circle illus-circle--2"></div>
+                <div class="illus-circle illus-circle--3"></div>
+                <div class="illus-icon">
+                    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="gola" cx="40" cy="24" r="18" stroke="white" stroke-width="3" fill="none"/>
+                        <path d="M12 70c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="white" stroke-width="3" stroke-linecap="round" fill="none"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="left-tagline">
+                <div class="tagline-title">Welcome Back</div>
+                <div class="tagline-sub">Sign in to continue your health journey</div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="r1">
+                <div class="step">ACCOUNT</div>
+                <div class="text1">Sign in to your account</div>
+            </div>
+
+            <div class="auth-form">
+                <div class="input-group" id="emailGroup">
+                    <label class="input-label" for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" class="input-field" placeholder="you@example.com" autocomplete="email">
+                    <div class="input-error" id="emailError"></div>
+                </div>
+
+                <div class="input-group" id="passwordGroup">
+                    <label class="input-label" for="loginPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="loginPassword" class="input-field" placeholder="Enter your password" autocomplete="current-password">
+                        <button type="button" class="toggle-password" onclick="togglePassword('loginPassword', this)" aria-label="Show password">
+                            <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="input-error" id="passwordError"></div>
+                </div>
+
+                <div class="form-meta">
+                    <label class="remember-label">
+                        <input type="checkbox" id="rememberMe" class="remember-check">
+                        <span class="remember-text">Remember me</span>
+                    </label>
+                </div>
+
+                <div class="form-error" id="loginError"></div>
+
+                <button class="submit-btn" id="loginBtn" onclick="handleLogin()">
+                    <span class="btn-text">Sign In</span>
+                    <span class="btn-spinner" id="loginSpinner"></span>
+                </button>
+
+                <div class="auth-switch">
+                    Don't have an account?
+                    <a href="register.html" class="switch-link">Create one</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

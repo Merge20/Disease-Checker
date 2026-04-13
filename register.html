@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Checker — Register</title>
+    <link rel="stylesheet" href="styles/auth.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script defer src="script/auth.js"></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="left">
+            <div class="web-title">Disease Checker</div>
+            <div class="left-illustration">
+                <div class="illus-circle illus-circle--1"></div>
+                <div class="illus-circle illus-circle--2"></div>
+                <div class="illus-circle illus-circle--3"></div>
+                <div class="illus-icon">
+                    <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Plus/cross medical icon -->
+                        <rect x="35" y="10" width="10" height="60" rx="5" fill="white"/>
+                        <rect x="10" y="35" width="60" height="10" rx="5" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="left-tagline">
+                <div class="tagline-title">Get Started</div>
+                <div class="tagline-sub">Create your free account today</div>
+            </div>
+        </div>
+
+        <div class="right right--register">
+            <div class="r1">
+                <div class="step">ACCOUNT</div>
+                <div class="text1">Create your account</div>
+            </div>
+
+            <div class="auth-form auth-form--register">
+
+                <div class="form-row">
+                    <div class="input-group" id="firstNameGroup">
+                        <label class="input-label" for="firstName">First Name</label>
+                        <input type="text" id="firstName" class="input-field" placeholder="First Name" autocomplete="given-name">
+                        <div class="input-error" id="firstNameError"></div>
+                    </div>
+                    <div class="input-group" id="lastNameGroup">
+                        <label class="input-label" for="lastName">Last Name</label>
+                        <input type="text" id="lastName" class="input-field" placeholder="Last Name" autocomplete="family-name">
+                        <div class="input-error" id="lastNameError"></div>
+                    </div>
+                </div>
+
+                <div class="input-group" id="regEmailGroup">
+                    <label class="input-label" for="regEmail">Email Address</label>
+                    <input type="email" id="regEmail" class="input-field" placeholder="you@example.com" autocomplete="email">
+                    <div class="input-error" id="regEmailError"></div>
+                </div>
+
+                <div class="input-group" id="regPasswordGroup">
+                    <label class="input-label" for="regPassword">Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="regPassword" class="input-field" placeholder="At least 6 characters" autocomplete="new-password">
+                        <button type="button" class="toggle-password" onclick="togglePassword('regPassword', this)" aria-label="Show password">
+                            <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="input-error" id="regPasswordError"></div>
+                </div>
+
+                <div class="input-group" id="confirmPasswordGroup">
+                    <label class="input-label" for="confirmPassword">Confirm Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="confirmPassword" class="input-field" placeholder="Repeat your password" autocomplete="new-password">
+                        <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword', this)" aria-label="Show password">
+                            <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="input-error" id="confirmPasswordError"></div>
+                </div>
+
+                <div class="form-error" id="registerError"></div>
+
+                <button class="submit-btn" id="registerBtn" onclick="handleRegister()">
+                    <span class="btn-text">Create Account</span>
+                    <span class="btn-spinner" id="registerSpinner"></span>
+                </button>
+
+                <div class="auth-switch">
+                    Already have an account?
+                    <a href="login.html" class="switch-link">Sign in</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

@@ -1,5 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+    const greetingEl = document.getElementById("userGreeting");
+    if (greetingEl) {
+        try {
+            const user = JSON.parse(localStorage.getItem("dc_current_user"));
+            if (user && user.firstName) {
+                greetingEl.textContent = "Hi, " + user.firstName;
+            }
+        } catch(e) {}
+    }
+
     const page = window.location.pathname.split("/").pop().toLowerCase();
 
     if (page === "index.html" || page === "") {
