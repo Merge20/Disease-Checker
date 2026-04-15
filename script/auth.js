@@ -224,7 +224,7 @@ function handleLogin() {
 
 function handleRegister() {
     showFormError("registerError", "");
-    ["firstNameError", "lastNameError", "regEmailError", "regPasswordError", "confirmPasswordError", "termsError"]
+    ["firstNameError", "lastNameError", "regEmailError", "regPasswordError", "confirmPasswordError"]
         .forEach(id => {
             const el = document.getElementById(id);
             if (el) el.textContent = "";
@@ -245,7 +245,6 @@ function handleRegister() {
     const email = document.getElementById("regEmail").value.trim();
     const password = document.getElementById("regPassword").value;
     const confirmPassword = document.getElementById("confirmPassword").value;
-    const agreed = document.getElementById("agreeTerms").checked;
 
     let valid = true;
 
@@ -297,11 +296,6 @@ function handleRegister() {
         valid = false;
     } else if (password.length >= 6) {
         setSuccess("confirmPasswordGroup");
-    }
-
-    if (!agreed) {
-        document.getElementById("termsError").textContent = "You must agree to the Terms of Service.";
-        valid = false;
     }
 
     if (!valid) return;

@@ -140,9 +140,26 @@ body {
     font-size: 20px;
 }
 
-.results-container {
+.results-wrapper {
+    position: relative;
     width: 680px;
-    max-height: 460px;
+}
+
+.results-wrapper::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 6px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+    pointer-events: none;
+    /* border-radius: 0 0 14px 14px; */
+}
+
+.results-container {
+    width: 100%;
+    max-height: 560px;
     overflow-y: auto;
     padding-right: 6px;
 }
